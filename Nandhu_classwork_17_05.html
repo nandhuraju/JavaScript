@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let x1=3.5;
+        let y1=2.4;
+        z1=x1+y1
+        document.write("3.5 + 2.4 = " + z1 + "<br>")
+        document.write("datatype of answer : " + typeof z1 + "<br>")
+
+        let x2=104.5;
+        let y2=53;
+        z2=x2/y2;
+        document.write("104.5 / 53 = " + z2 + "<br>")
+        document.write("datatype of answer : " + typeof z2 + "<br>")
+
+        let x3=4.5;
+        let y3=2;
+        z3=x3*y3;
+        document.write("4.5 x 2 = " + z3 + "<br>")
+        document.write("datatype of answer : " + typeof z3 + "<br>"+ "<br>"+ "<br>")
+
+        let x4=5;
+        document.write("x=5 , datatype of x: " + typeof x4 + "<br>")
+
+        let x5=3.5
+        document.write("x=3.5 , datatype of x: " + typeof x5 + "<br>")
+
+        let x6="a"
+        document.write("x=\"a\" , datatype of x: " + typeof x6 + "<br>")
+
+        let x7="hello"
+        document.write("x=\"hello\" , datatype of x: " + typeof x7 + "<br>")
+
+        let x8=null
+        document.write("x=null , datatype of x: " + typeof x8 + "<br>"+ "<br>"+ "<br>")
+
+        let fname ="Nandhu"
+        let lname="Raju"
+        
+        let fullname=fname + " " + lname
+        document.write("My full name is : " + fullname + "<br>" + "<br>"+ "<br>")
+
+        let s ="MongoDB is a decentralised distributed ledger.MongoDB can eliminate centralisation."
+
+        document.write("<br>" + " Replacing MongoDB with Blockchain : "+ s.replace(/MongoDB/g,"Blockchain")+ "<br>"+ "<br>")
+
+        let movies=["Vertigo" ,"The Godfather","The Usual Suspects","Toy Story", "Mad max","Fight Club", "The Django Unchained"]
+
+        document.write("Favorite films: " + movies + "<br>"+ "<br>")
+        document.write("Most favorite film : " + movies[5]+ "<br>")
+        movies.push("Shutter Island")
+
+        document.write("<br>"+"New List: " + movies+ "<br>")
+
+        document.write("<br>"+"Pop one movie from list : " + movies.pop() )
+
+        document.write("<br>"+ "<br>"+"New List: " + movies+ "<br>")
+
+        delete(movies[3]);
+
+        document.write("<br>"+ "<br>"+"New List: " + movies+ "<br>")
+
+        x= movies.slice(2,6)
+
+        document.write("<br>"+ "<br>"+"New Array from 3 to 6 : " + x+ "<br>")
+
+        y= movies.indexOf("Fight Club") + 1
+
+        document.write("<br>"+ "<br>"+"Position of fight club : " +y+ "<br>")
+
+
+    
+    </script>
+</body>
+</html>

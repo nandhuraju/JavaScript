@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let x="nandhu";
+        
+        let y="raju"
+        let z= x+" "+y
+        
+        document.write("my name is : " + z + "<br>")
+    
+        document.write("Datatype of name : " + typeof z + "<br>")
+
+        let p="nandhu";
+        
+        let q=5
+        let r= p+q
+        
+        document.write("my name is : " + r + "<br>")
+    
+        document.write("Datatype of name : " + typeof r + "<br>")
+
+        let name = "Nandhu Raju"
+        let age = 31
+
+        document.write("my name is " + name + " and i am " + age + " years old" + "<br>")
+
+        let a=15
+        let b=5.5
+        let c="Hello"
+        d=c+a+b
+
+        document.write("addition gives :" + d  + "<br>")
+        document.write("datatype is : " + typeof d + "<br>")
+
+        let msg="My name is \"Nandhu\""
+        document.write(msg +"<br>")
+
+        let say= "Hi hello everyone.How are you all?"
+        document.write("The length of the string is : " + say.length + "<br>")
+
+        //index-0 1 2..   if choose 3, 4th character will print
+
+        document.write("character at third position is : " + say.charAt(3) + "<br>") 
+        document.write("character at third position is : " + say.at(5) + "<br>")  // same as charAt
+
+
+        document.write(say.toUpperCase()+ "<br>")
+        document.write(say.toLowerCase()+ "<br>")
+
+
+        let h="Happy"
+        let i ="New Year"
+        h=h.concat(" "  i)
+        document.write(h+ "<br>")
+
+        document.write(h.repeat(4))
+
+        document.write("<br>" + say.slice(2,15)) // starting and ending index where to slice
+        document.write("<br>" + say.slice(5)) // only starting index provided,so print upto last
+
+        document.write("<br>" +"replacing \'all\' with   \'everyone\' : " +say.replace(/all/g,"everyone"))
+
+        document.write( "<br>" + say.search(/all/g)) // shows position number
+
+        let kba="https://www.kba.ai";
+        document.write ("<br> The split is : "+kba.split("."))
+
+        let a1=12
+        let b1="hai"
+        ab=a1+b1
+
+
+
+        let a2 ="10"
+        let b2 ="20"
+        let sum = a2+b2;
+        let u=Number.parseInt(a2)
+        let v=Number.parseInt(b2)
+
+        sum1= u + v
+        
+        document.write("<br> sum is " + sum1)
+
+
+        
+
+    </script>
+</body>
+</html>

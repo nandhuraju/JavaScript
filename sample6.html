@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Variables</h1>
+    <p>Using let</p>
+
+    <p id="demo">let output </p>
+
+    <p> Using var</p>
+
+    <p id="de">var output</p>
+
+    <p> Using const</p>
+
+    <p id="dem">var output</p>
+
+
+   
+    <script>
+
+        //let & var difference
+        // if let used inside curly braces its validity is only inside braces
+        //also let cannot be redeclare
+
+     let a=40;
+      
+      {
+        let a=15;
+
+      }
+      
+    
+      document.getElementById("demo").innerHTML=a
+
+      //in case of var its validity is global and execute the last declaration
+      //var can be redeclare
+
+       
+      var b=40;
+      
+      {
+        var b=15;
+
+      }
+      
+    
+      document.getElementById("de").innerHTML=b
+
+      const pi=3.14
+      r=5
+      A=2*pi*r
+      document.getElementById("dem").innerHTML=A
+
+
+    
+
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Before Swapping</h2>
+
+     <p id="de">A</p>
+     <p id="d">B</p>
+
+    <h2> After Swapping</h2>
+
+     <p id="be">A</p>
+     <p id="b">B</p>
+    
+
+    <script>
+        
+        let A=20;
+        let B=10;
+        let temp;
+        
+        
+        document.getElementById("de").innerHTML="a="+A
+        document.getElementById("d").innerHTML="b="+B
+        
+         temp=B;
+         B=A
+         A=temp
+
+        document.getElementById("be").innerHTML="a="+A
+        document.getElementById("b").innerHTML="b="+B
+
+    </script>
+   
+ </body>

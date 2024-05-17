@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let fruits=["Apple","Orange","Pineapple","Mango"];
+        document.write("My favorite fruits are : " + fruits);
+        document.write("<br>"+"the datatype is : " + typeof fruits);
+        document.write("<br>"+"is this an array? : " + Array.isArray(fruits));
+        document.write("<br>"+"length of the array : " + fruits.length); // but index 0-apple 1-orange 2-pineapple
+        document.write( "<br>"+"fruit at second position : " + fruits[1] );// for second position index-1
+        fruits[4]="Water Melon" // insert new item to a position replacing current item in that position
+        document.write("<br>"+"My new list of favorite fruits is : " + fruits);
+        fruits.push("Grapes") // insert new item at the end position
+        document.write("<br>"+"My new list of favorite fruits is : " + fruits);
+        
+        document.write("<br>"+ "pop item : " + fruits.pop()) // remove last item from the list
+        document.write("<br> "+ " New list : " + fruits)
+        delete(fruits[1]); // item will get deleted but not the location
+        document.write("<br> "+ "new list : "+ fruits)
+        document.write("<br> "+ "fruit at second position : "+ fruits[1]) // will get undefined as the item is deleted and location is still there
+
+        let f1=fruits.slice(2)
+        let f2=fruits.slice(2,4)
+
+        document.write("<br> "+ "slice list from position 3 to last : "+ f1)
+        document.write("<br> "+ "slice list from position 3 to before 4 : "+ f2)
+
+        f3= fruits.indexOf("Mango")
+
+        document.write("<br> "+ "index of mango : "+ f3)
+
+        f4= fruits.indexOf("Mango") + 1
+
+        document.write("<br> "+ "position  of mango : "+ f4)
+
+
+
+
+</script>
+</body>
+</html>
