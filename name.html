@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Enter First Name :
+    <input type="text" id="fname">
+
+    <br>
+    Enter Second Name :
+    <input type="text" id="lname">
+
+    <br>
+    <input type="button" value="click here" onclick="fullname()">
+
+    <p id="demo"></p>
+
+
+    <script>
+
+        function fullname() {
+            let x = document.getElementById("fname").value;
+            let y = document.getElementById("lname").value;
+            document.getElementById("demo").innerHTML = x + " " + y;
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let flowers = ["rose","sunflower","lotus","jasmine","lilly"]
+
+        document.write("Sorted list : "  + flowers.sort())
+        document.write("<br> Reverse list : " + flowers.reverse())
+
+        let a="Hello World" 
+        let b="hEllO World"
+
+        c= a==b
+        document.write("<br> Result: " + c + " Type : " + typeof c)
+
+        d= a===b
+        document.write("<br> Result: " + d + " Type : " + typeof d)
+
+        let myAge=20
+        let broAge=myAge + 10
+
+        document.write("<br>" + "I am " + myAge + " yrs of old and my brother is 10 yrs older to me. He is now " + broAge + " years old.")
+
+       
+
+        let fname="nandhu"
+        let lname="raju"
+        let place="thiruvalla"
+
+        s=fname.toUpperCase()
+        t=lname.toUpperCase()
+        u=place.toUpperCase()
+
+        document.write("<br> My name is " + s +" " + t + ".I live in " + u )
+
+        let m="script.js"
+        document.write("<br> The name of js file is : " + m.slice(0,-3))
+
+        // or
+
+        m1=m.split(".")
+        document.write("<br> The name of js file is : " + m1[0])
+
+
+        function multi(a1,b1)
+        {
+            let c1=a1*b1;
+            return c1
+        }
+
+        let x1=5
+        let y1=8
+        z1 = multi(x1,y1)
+
+        document.write("<br> 5 x 8 = " + z1)
+
+        
+        function multi1(a2,b2,c2)
+        {
+            return a2*b2*c2
+        }
+
+        let x2=5
+        let y2=2
+        let z2=3
+
+        r= multi1(x2,y2,z2)
+
+        document.write("<br> 5 x 2 x 3 = " + r)
+
+        function sum(a3,b3)
+       
+        {
+            c3=a3+b3
+            return c3;
+        }
+        let x3=20
+        let y3=30
+        p=2 * sum(x3,y3)
+        
+
+        document.write("<br> 2 x (30 + 20) = " + p)
+
+       
+
+
+    </script>
+    
+</body>
+</html>

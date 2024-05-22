@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter the name : 
+    <input id="text" onchange="txt()">
+    <br> <br> <br>
+    Entered name :
+    <p id="demo"></p>
+
+   
+
+    Enter the value : 
+    <input id="value" onchange="val()">
+
+    <br>
+
+    Entered Value:
+
+    <p id="demo2"></p>
+
+
+    <script>
+        function txt()
+        {
+           let x=document.getElementById("text").value ;
+           document.getElementById("demo").innerHTML= x + " Type : " + typeof x;
+
+        }
+
+        function val()
+
+        {
+            let y=document.getElementById("value").value ;
+           document.getElementById("demo2").innerHTML= y + " Type : " + typeof y;
+           
+
+        }
+
+        
+
+    </script>
+
+</body>
+</html>

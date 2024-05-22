@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+p=33985455650658964117577
+        q=154846541454454551454544
+        r=p+q
+        document.write("<br>" + r  + " type : " + typeof r)
+        
+        
+        
+        x=BigInt("233985455650658964117577")  //to get big integers operations without exponential answers
+        y=BigInt("154846541454454551454544")
+
+        z= x+y;
+        document.write("<br>" + z + " type : " + typeof z)     
+        
+        let a="welcome"
+        let b="welcome"
+            c=a==b
+            document.write("<br>"+"Result :" + c + " type : " + typeof c)
+
+        // let u="welcome"
+        // let v= new String("welcome")                 // here welcome consider as object 
+        //     w=u==v                            // for == only true, for === false, since type are different
+        //     document.write("<br>"+"Result :" + w + " type : " + typeof w)  
+
+        let u="welcome"
+        document.write("<br>"+" type  of u : " + typeof u)  
+        let v= new String("welcome")
+        document.write("<br>"+" type of v : " + typeof v)   
+        
+        
+            w=u===v                         // here o/p is false because type of u is string and v is object
+            document.write("<br>"+"Result :" + w + " type : " + typeof w) 
+
+
+    </script>
+</body>
+</html>

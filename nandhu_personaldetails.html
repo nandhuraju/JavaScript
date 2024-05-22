@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    Enter First Name :
+    <input type="text" id="fname">
+
+    <br><br>
+    Enter Second Name :
+    <input type="text" id="lname">
+
+    <br><br>
+    Enter Full Address :
+    <textarea name="add" id="address" rows="4">
+
+   </textarea>
+    <!-- <input type="text" id="address"> -->
+    <br><br>
+    Enter Contact Number :
+    <input type="text" id="contact">
+    <br><br>
+    Enter email id :
+    <input type="email" id="email">
+
+    <br><br>
+
+    <input type="button" id="submit" value="SUBMIT" onclick="details()">
+
+    <p id="print"></p>
+
+
+    <script>
+
+        function details() {
+            let x = document.getElementById("fname").value;
+            let y = document.getElementById("lname").value;
+            let z = document.getElementById("address").value;
+            let p = document.getElementById("contact").value;
+            let q = document.getElementById("email").value;
+
+
+            document.getElementById("print").innerHTML = "Full Name : " + x + " " + y + "<br>" + "Full Address : " + z + "<br>" + "Contact Number : " + p + "<br>" + "Email ID : " + q
+
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>

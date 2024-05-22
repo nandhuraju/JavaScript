@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <b style="font-size: 30px;">ISSUE NEW CERTIFICATE
+    </b>
+    <br><br><br>
+Select Course* <br><br>
+<select name="selco" id="course" style="width: 250px;" >
+<option value="CBA" selected>Certified Blockchain Associate</option>
+<option value="CED">Certified Ethereum Developer</option>
+<option value="CHFD">Certified Hyperledger Fabric Developer</option>
+</select>
+<br><br>
+Certificate ID*
+<br><br>
+<input type="text" name="id" required style="width: 240px;" id="id">
+<br><br>
+Candidate Name*
+<br><br>
+<input type="text" name="cname" required style="width: 240px;" id="name">
+<br><br>
+Select Grade* <br><br>
+<select name="grade" id="grade" style="width: 250px;">
+<option value="S">S</option>
+<option value="A">A</option>
+<option value="B">B</option>
+<option value="C">C</option>
+</select>
+<br><br>
+Issue Date* <br><br>
+<input type="date" name="date" required style="width: 240px;" id="date">
+<br><br><br>
+
+<input type="button" value="ISSUE CERTIFICATE" onclick="issue()">
+
+    <script>
+
+function issue() {
+            let x = document.getElementById("course").value;
+            let y = document.getElementById("id").value;
+            let z = document.getElementById("name").value;
+            let p = document.getElementById("grade").value;
+            let q = document.getElementById("date").value;
+
+
+            console.log ("Course : " + x + "\n" + "Certificate ID : "+ y + "\n" + "Candidate Name : " + z + "\n" + "Grade : " + p + "\n" + "Date : " + q)
+
+
+        }
+        
+    </script>
+</body>
+</html>
